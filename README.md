@@ -10,7 +10,7 @@ PyEventGen is a flexible and open-source tool designed for generating fictitious
 
 # Why is this project useful?
 - By simulating a variety IT security events, this tool enables users to rigorously test how their SIEM systems and other monitoring tools respond to varied and complex scenarios.
-- - The tool can generate large volumes of simulated events quickly, allowing users to test and stress their systems without the need for real data.
+- The tool can generate large volumes of simulated events quickly, allowing users to test and stress their systems without the need for real data.
 - Programmers can use this tool to understand better how to interact with databases like MongoDB, implement CRUD operations, and develop efficient data parsing techniques.
 - The tool provides a fictitious sandbox environment for experimenting with data structures, algorithms, and system design. This is particularly useful for students and professionals in computer science who need a practical way to apply theoretical concepts.
 - Users can customize the types and volumes of data generated, making it a flexible tool for various testing and development needs.
