@@ -35,4 +35,7 @@ Follow the on-screen instructions to generate events and configure entities.
 # Where can I get more help, if I need it?
 ...
 
-Thank you so much! Any feedback is greatly appreciated! :)
+# License
+This project is licensed under the GNU General Public License, version 2 - see the LICENSE file for details.
+
+**Thank you so much! Any feedback is greatly appreciated! :)**
