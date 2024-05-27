@@ -16,7 +16,23 @@ PyEventGen is a flexible and open-source tool designed for generating fictitious
 - Users can customize the types and volumes of data generated, making it a flexible tool for various testing and development needs.
 
 # How do I get started?
-...
+## Installation
+Clone this repository using:
+```
+git clone https://github.com/klfajardo/PyEventGen
+```
+Install the required dependencies:
+```
+pip install -r requirements.txt
+```
+## Usage
+To start the interactive console of PyEventGen:
+```
+python main.py
+```
+Follow the on-screen instructions to generate events and configure entities.
 
 # Where can I get more help, if I need it?
 ...
+
+Thank you so much! Any feedback is greatly appreciated! :)
