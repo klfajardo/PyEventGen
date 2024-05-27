@@ -370,3 +370,6 @@ class PyEventGenShell(cmd.Cmd):
             else:
                 print("Invalid input.")
 
+if __name__ == '__main__':
+    setup_logging()
+    PyEventGenShell().cmdloop()
