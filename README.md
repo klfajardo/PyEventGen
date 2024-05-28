@@ -28,7 +28,7 @@ pip install -r requirements.txt
 ## Usage
 To start the interactive console of PyEventGen:
 ```
-python main.py
+python command_line.py
 ```
 Follow the on-screen instructions to generate events and configure entities.
 
