@@ -2,7 +2,9 @@ import logging
 import time
 import random
 
-class VirtualEventGen():
+
+class VirtualEventGen:
+
     def __init__(self, config_manager, data_manager):
         # Manager components get imported from command_line.py initialization/instantiation
         self.config_manager = config_manager
@@ -19,8 +21,8 @@ class VirtualEventGen():
         """
 
         # Obtain global config (NOT USED AT THE MOMENT)
-        #event_type = self.config_manager.get_global_config("event_type")
-        #active_hours = self.config_manager.get_global_config("active_hours")
+        # event_type = self.config_manager.get_global_config("event_type")
+        # active_hours = self.config_manager.get_global_config("active_hours")
 
         # I haven't figured out yet how I'm gonna code this or what the purpose of
         # event_type and active_hours fields is gonna be, so for now, I will just
@@ -76,7 +78,8 @@ class VirtualEventGen():
 
         # Validates that there are users or servers available.
         if not users or not servers:
-            self.logger.warning("No users or servers available for event generation.")
+            message = "No users or servers available for event generation."
+            self.logger.warning(message)
             return
 
         # Pick a random user and server.
