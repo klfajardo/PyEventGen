@@ -37,11 +37,11 @@ When the program runs for the first time, it will prompt for a MongoDB connectio
 
 ### Available Commands
 
-# `init`
+#### `init`
 
 Initialize the system configuration (currently not in use).
 
-# `create_users`
+#### `create_users`
 
 Create phantom users with the specified parameters.
 
@@ -56,7 +56,7 @@ create_users 10 test_user admin dev_team
 ```
 This command creates 10 users with usernames `test_user_1` to `test_user_10`, role `admin`, and group `dev_team`.
 
-# `create_servers`
+#### `create_servers`
 
 Create phantom servers with the specified parameters.
 
@@ -71,7 +71,7 @@ create_servers 5 test_server prod_team
 ```
 This command creates 5 servers with names `test_server_1` to `test_server_5`, and group `prod_team`.
 
-# `read`
+#### `read`
 
 Read documents from a specified collection based on a query.
 
@@ -91,7 +91,7 @@ read users {"role": "admin"}
 ```
 This command reads all documents from the `users` collection where the role is `admin`.
 
-# `update`
+#### `update`
 
 Update documents in a specified collection based on a query.
 
@@ -111,7 +111,7 @@ update users {"username": "test_user_1"} {"role": "super_admin"}
 ```
 This command updates the user `test_user_1` to have the role `super_admin`.
 
-# `remove`
+#### `remove`
 
 Remove documents from a specified collection based on a query.
 
@@ -131,7 +131,7 @@ remove users {"group": "test_team"}
 ```
 This command removes all users in the `test_team` group.
 
-# `generate_events`
+#### `generate_events`
 
 Generate and export events based on the given parameters. Depending on the specified format, a new file with the specified format will be created in the installation directory containing the events.
 
@@ -156,7 +156,7 @@ generate_events 20 {} {"role": "admin"} none
 ```
 This command generates 20 events using all servers and users with role `admin`, but does not export them.
 
-# `clear`
+#### `clear`
 
 Clear the console.
 
@@ -165,7 +165,7 @@ Clear the console.
 clear
 ```
 
-# `exit`
+#### `exit`
 
 Exit the PyEventGen shell.
 
@@ -176,10 +176,10 @@ exit
 
 By following these usage examples, you can effectively utilize the `PyEventGenShell` to manage phantom users and servers, generate events, and export them in various formats.
 
-# Confirmations and Error Handling
+### Confirmations and Error Handling
 Many commands prompt for confirmation before making changes, and all commands include error handling to ensure invalid inputs are managed gracefully. For example, if a query or argument is invalid, an error message will be printed, and the command will not proceed.
 
-# MongoDB Connection
+### MongoDB Connection
 As mentioned above, upon the first run, the program will prompt for a MongoDB connection URI and database name. You can press enter to use the default settings if you have MongoDB Community Edition running on your localhost. Any database name you enter will create a new database, allowing you to maintain separate mock environments for various use cases. You can also specify remote URIs to connect to a remote MongoDB server.
 
 As MongoDB is used, if you close the program, exit, or shut down the computer, your data will remain intact as long as MongoDB is running. Ensure you specify the same database name upon restarting the program to access your existing data. You can manage your databases using mongosh or MongoDB Compass for a web interface.
