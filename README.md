@@ -25,16 +25,14 @@ Install the required dependencies:
 ```
 pip install -r requirements.txt
 ```
+
 ## Usage
+
 To start the interactive console of PyEventGen:
 ```
 python command_line.py
 ```
-Here is the detailed `Usage` section for your `PyEventGenShell` program documentation. This section covers various commands, their functionalities, and examples of usage:
 
----
-
-## Usage
 When the program runs for the first time, it will prompt for a MongoDB connection URI and database name. You can simply press enter to use the default settings if you have MongoDB Community Edition running on your localhost. Any database name you enter will create a new database, allowing you to maintain separate mock environments for various use cases. You can also specify remote URIs to connect to a remote MongoDB server.
 
 ### Available Commands
