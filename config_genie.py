@@ -1,10 +1,12 @@
 import logging
 
+
 class ConfigGenie:
+
     def __init__(self):
         # Global Configuration
         self._global_config = {
-            "shell_verbose": "True", # just some examples on how this could be used
+            "shell_verbose": "True",  # just some examples on how this could be used
             "log_level": "INFO"
         }
         # Group configuration
@@ -38,12 +40,14 @@ class ConfigGenie:
         old_value = self._global_config[attribute]
         self._global_config.update({attribute: new_value})
 
-        self.logger.info(f"Attribute '{attribute}' has been modified. Old value: '{old_value}', New value: '{new_value}'")
+        self.logger.info(
+            f"Attribute '{attribute}' has been modified. Old value: '{old_value}', New value: '{new_value}'")
 
     def set_group_config(self, group, attribute, new_value):
         """
         Replaces current value with the given new value for the specified
         attribute in a group.
+        :param group: [Group or List-of Group] Group
         :param attribute: [String] The attribute to be modified.
         :param new_value: [String or Boolean] The new value to be set.
         """
@@ -59,14 +63,14 @@ class ConfigGenie:
         old_value = self._global_config[attribute]
         self._global_config.update({attribute: new_value})
 
-        self.logger.info(f"Attribute '{attribute}' has been modified. Old value: '{old_value}', New value: '{new_value}'")
+        self.logger.info(
+            f"Attribute '{attribute}' has been modified. Old value: '{old_value}', New value: '{new_value}'")
 
     def get_global_config(self, *args):
         """
         Gets current configuration from ConfigGenie / App (internal). If:
         - args > 0 returns those specified attributes
         - args = 0 returns whole dictionary
-        :param group: [Group or List-of Group] Group
         :param args: [String or List-of String] Specified attributes
         :return: Dictionary
         """
@@ -90,7 +94,7 @@ class ConfigGenie:
         If:
         - args > 0 returns those specified attributes
         - args = 0 returns whole dictionary
-        :param group: [String] Name of the group
+        :param group: [Group or List-of Group] Group
         :param args: [String or List-of String] Specified attributes
         :return: Dictionary
         """
