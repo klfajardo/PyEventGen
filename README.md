@@ -179,6 +179,8 @@ By following these usage examples, you can effectively utilize the `PyEventGenSh
 ### Confirmations and Error Handling
 Many commands prompt for confirmation before making changes, and all commands include error handling to ensure invalid inputs are managed gracefully. For example, if a query or argument is invalid, an error message will be printed, and the command will not proceed.
 
+Additionally, the program logs all actions and errors to a file named pyeventgen.log in the installation directory. This log file is useful for troubleshooting and understanding what each component of the program is doing.
+
 ### MongoDB Connection
 As mentioned above, upon the first run, the program will prompt for a MongoDB connection URI and database name. You can press enter to use the default settings if you have MongoDB Community Edition running on your localhost. Any database name you enter will create a new database, allowing you to maintain separate mock environments for various use cases. You can also specify remote URIs to connect to a remote MongoDB server.
 
