@@ -1,2 +1,2 @@
 pymongo
-# sinceramente no recuerdo, creo que pymongo era una de ellas
+pyreadline3
