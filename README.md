@@ -4,7 +4,7 @@ PyEventGen is a flexible and open-source tool designed for generating fictitious
 # Features
 - Dynamic generation of fictitious events based on user-defined queries.
 - Integration with MongoDB to effectively manage and manipulate data.
-- Event export in multiple formats including JSON and log records, with future implementations for XML, CSV and others.
+- Event export in multiple formats including JSON, log records, XML, CSV and future implementations of others.
 - Configuration and management of users and servers through an interactive console.
 - Logging system to monitor and record operations performed by the system.
 
