@@ -191,7 +191,7 @@ Additionally, the program logs all actions and errors to a file named `pyeventge
 ### MongoDB Connection
 As mentioned above, upon the first run, the program will prompt for a MongoDB connection URI and database name. You can press enter to use the default settings if you have MongoDB Community Edition running on your localhost. Any database name you enter will create a new database, allowing you to maintain separate mock environments for various use cases. You can also specify remote URIs to connect to a remote MongoDB server.
 
-As MongoDB is used, if you close the program, exit, or shut down the computer, your data will remain intact as long as MongoDB is running. Ensure you specify the same database name upon restarting the program to access your existing data. You can manage your databases using mongosh or MongoDB Compass for a web interface.
+As MongoDB is used, if you close the program, exit, or shut down the computer, your data will remain intact as long as MongoDB is running. Ensure you specify the same database name upon restarting the program to access your existing data. You can manage your databases using mongosh or MongoDB Compass for a web interface as well, but the PyEventGenShell itself already contains all the operations needed.
 
 For a visual reference on deploying PyEventGen, please see the PyEventGen deployment visual reference. (will add link here)
 
