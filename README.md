@@ -140,6 +140,13 @@ Generate and export events based on the given parameters. Depending on the speci
 generate_events <count> <servers_query> <users_query> <export_format>
 ```
 
+Formats:
+- log
+- json
+- csv
+- xml
+- none (if you just want to print the generated events into the console, and not export them)
+
 **Examples**:
 ```
 generate_events 100 {} {} json
